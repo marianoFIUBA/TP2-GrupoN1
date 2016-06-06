@@ -6,13 +6,7 @@ package fiuba.algo3.Modelo;
 public class Decepticon extends AlgoFormer {
 
 
-
-
-
-
-
-
-
-
-
+    public Decepticon(int puntosDeVida, int velocidad, int ataque, int distanciaAtaque, int posicionX, int posicionY, EstadoAlgoformer estadoNuevo) {
+        super(puntosDeVida, velocidad, ataque, distanciaAtaque, posicionX, posicionY, estadoNuevo);
+    }
 }

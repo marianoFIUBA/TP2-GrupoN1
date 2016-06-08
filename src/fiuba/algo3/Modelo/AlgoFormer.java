@@ -9,14 +9,13 @@ public class AlgoFormer {
     private int distanciaAtaque;
     private EstadoAlgoformer estado;
 
-    public AlgoFormer(int puntosDeVida, int velocidad, int ataque, int distanciaAtaque,int posicionX, int posicionY, EstadoAlgoformer estadoNuevo) {
+    public AlgoFormer(int puntosDeVida, int velocidad, int ataque, int distanciaAtaque, Casillero posicion ) {
 
         this.puntosDeVida = puntosDeVida;
         this.velocidad = velocidad;
         this.ataque = ataque;
         this.distanciaAtaque = distanciaAtaque;
-        this.posicion = new Casillero(posicionX,posicionY);
-        this.estado = estadoNuevo;
+        this.posicion = posicion;
     }
 
     public Casillero getPosicion() {

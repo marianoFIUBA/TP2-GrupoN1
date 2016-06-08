@@ -5,6 +5,11 @@ package fiuba.algo3.modelo;
  */
 public abstract class Autobot extends AlgoFormer {
 
+    public Autobot(int puntosDeVida, Casillero posicion){
+
+        super(puntosDeVida, posicion);
+    }
+
     public void recibirAtaqueDeAutobot(int ataque){
         //throw AutobotNoPuedeAtacarAAutobotException
     }

@@ -5,6 +5,11 @@ package fiuba.algo3.modelo;
  */
 public abstract class Decepticon extends AlgoFormer {
 
+    public Decepticon(int puntosDeVida, Casillero posicion){
+
+        super(puntosDeVida, posicion);
+    }
+
     public void recibirAtaqueDeAutobot(int ataque){
 
         this.puntosDeVida -= ataque;

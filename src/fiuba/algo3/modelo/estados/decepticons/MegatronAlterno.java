@@ -1,4 +1,4 @@
-package fiuba.algo3.modelo.estados;
+package fiuba.algo3.modelo.estados.decepticons;
 
 import fiuba.algo3.modelo.AlgoFormer;
 import fiuba.algo3.modelo.Casillero;
@@ -7,7 +7,7 @@ import fiuba.algo3.modelo.EstadoAlgoformer;
 /**
  * Created by Mariano on 07/06/2016.
  */
-public class OptimusAlterno implements EstadoAlgoformer {
+public class MegatronAlterno implements EstadoAlgoformer {
 
     private int ataque;
     private int distancia;
@@ -19,6 +19,6 @@ public class OptimusAlterno implements EstadoAlgoformer {
 
     public EstadoAlgoformer cambiarEstado(){
 
-        return new OptimusHumanoide();
+        return new MegatronHumanoide();
     }
 }

@@ -7,11 +7,11 @@ public abstract class AlgoFormer {
 
     protected EstadoAlgoformer estado;
 
-//    public AlgoFormer(int puntosDeVida, Casillero posicion ) {
-//
-//        this.puntosDeVida = puntosDeVida;
-//        this.posicion = posicion;
-//    }
+    public AlgoFormer(int puntosDeVida, Casillero posicion ) {
+
+        this.puntosDeVida = puntosDeVida;
+        this.posicion = posicion;
+    }
 
     public Casillero getPosicion() {
         return posicion;
@@ -20,6 +20,11 @@ public abstract class AlgoFormer {
     public abstract void moverAcasillero(Casillero casillero);
 
     public abstract void atacar(AlgoFormer algoformer);
+
+    public void cambiarEstado(){
+
+        this.estado.cambiarEstado();
+    }
 
 //    public void moverAcasillero(Casillero casillero) {
 //

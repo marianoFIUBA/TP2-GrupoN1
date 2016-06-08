@@ -1,20 +1,15 @@
 package fiuba.algo3.Modelo;
 
-public class AlgoFormer {
+public abstract class AlgoFormer {
 
     private Casillero posicion;
     private int puntosDeVida;
-    private int velocidad;
-    private int ataque;
-    private int distanciaAtaque;
+
     private EstadoAlgoformer estado;
 
-    public AlgoFormer(int puntosDeVida, int velocidad, int ataque, int distanciaAtaque, Casillero posicion ) {
+    public AlgoFormer(int puntosDeVida, Casillero posicion ) {
 
         this.puntosDeVida = puntosDeVida;
-        this.velocidad = velocidad;
-        this.ataque = ataque;
-        this.distanciaAtaque = distanciaAtaque;
         this.posicion = posicion;
     }
 
@@ -22,13 +17,17 @@ public class AlgoFormer {
         return posicion;
     }
 
-    public void moverAcasillero(Casillero casillero) {
+    public abstract void moverAcasillero(Casillero casillero);
 
-        if (estaEnRango(casillero, this.velocidad)) {
-            this.posicion = casillero;
-        }
+    public abstract void atacar(AlgoFormer algoformer);
 
-    }
+//    public void moverAcasillero(Casillero casillero) {
+//
+//        if (estaEnRango(casillero, this.velocidad)) {
+//            this.posicion = casillero;
+//        }
+//
+//    }
 
 
 

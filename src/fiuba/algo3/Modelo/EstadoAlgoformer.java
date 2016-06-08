@@ -7,5 +7,5 @@ public interface EstadoAlgoformer {
 
     public void atacar(AlgoFormer algoFormer);
     public void moverA(Casillero casillero);
-    public void cambiarEstado();
+    public EstadoAlgoformer cambiarEstado();
 }

@@ -3,7 +3,7 @@ package fiuba.algo3.Modelo;
 /**
  * Created by Mariano on 07/06/2016.
  */
-public class OptimusHumanoide implements EstadoAlgoformer {
+public class MegatronHumanoide implements EstadoAlgoformer {
 
     private int ataque;
     private int distancia;
@@ -15,6 +15,6 @@ public class OptimusHumanoide implements EstadoAlgoformer {
 
     public EstadoAlgoformer cambiarEstado(){
 
-        return new OptimusAlterno();
+        return new MegatronAlterno();
     }
 }

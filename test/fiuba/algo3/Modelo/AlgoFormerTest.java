@@ -1,6 +1,5 @@
-package fiuba.algo3.Modelo;
+package fiuba.algo3.modelo;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 public class AlgoFormerTest {

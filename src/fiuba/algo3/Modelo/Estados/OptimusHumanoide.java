@@ -1,9 +1,13 @@
-package fiuba.algo3.Modelo;
+package fiuba.algo3.modelo.estados;
+
+import fiuba.algo3.modelo.AlgoFormer;
+import fiuba.algo3.modelo.Casillero;
+import fiuba.algo3.modelo.EstadoAlgoformer;
 
 /**
  * Created by Mariano on 07/06/2016.
  */
-public class OptimusAlterno implements EstadoAlgoformer {
+public class OptimusHumanoide implements EstadoAlgoformer {
 
     private int ataque;
     private int distancia;
@@ -15,6 +19,6 @@ public class OptimusAlterno implements EstadoAlgoformer {
 
     public EstadoAlgoformer cambiarEstado(){
 
-        return new OptimusHumanoide();
+        return new OptimusAlterno();
     }
 }

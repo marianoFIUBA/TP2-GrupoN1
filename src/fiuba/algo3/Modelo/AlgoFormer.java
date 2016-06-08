@@ -1,17 +1,17 @@
-package fiuba.algo3.Modelo;
+package fiuba.algo3.modelo;
 
 public abstract class AlgoFormer {
 
-    private Casillero posicion;
-    private int puntosDeVida;
+    protected Casillero posicion;
+    protected int puntosDeVida;
 
-    private EstadoAlgoformer estado;
+    protected EstadoAlgoformer estado;
 
-    public AlgoFormer(int puntosDeVida, Casillero posicion ) {
-
-        this.puntosDeVida = puntosDeVida;
-        this.posicion = posicion;
-    }
+//    public AlgoFormer(int puntosDeVida, Casillero posicion ) {
+//
+//        this.puntosDeVida = puntosDeVida;
+//        this.posicion = posicion;
+//    }
 
     public Casillero getPosicion() {
         return posicion;
@@ -31,7 +31,7 @@ public abstract class AlgoFormer {
 
 
 
-    private boolean estaEnRango(Casillero casillero, int distancia) {
+    protected boolean estaEnRango(Casillero casillero, int distancia) {
 
         boolean estaEnRango;
         int distanciaX;

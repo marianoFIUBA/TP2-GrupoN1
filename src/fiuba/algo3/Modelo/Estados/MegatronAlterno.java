@@ -1,9 +1,13 @@
-package fiuba.algo3.Modelo;
+package fiuba.algo3.modelo.estados;
+
+import fiuba.algo3.modelo.AlgoFormer;
+import fiuba.algo3.modelo.Casillero;
+import fiuba.algo3.modelo.EstadoAlgoformer;
 
 /**
  * Created by Mariano on 07/06/2016.
  */
-public class MegatronHumanoide implements EstadoAlgoformer {
+public class MegatronAlterno implements EstadoAlgoformer {
 
     private int ataque;
     private int distancia;
@@ -15,6 +19,6 @@ public class MegatronHumanoide implements EstadoAlgoformer {
 
     public EstadoAlgoformer cambiarEstado(){
 
-        return new MegatronAlterno();
+        return new MegatronHumanoide();
     }
 }

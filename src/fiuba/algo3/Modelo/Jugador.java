@@ -1,4 +1,4 @@
-package fiuba.algo3.Modelo;
+package fiuba.algo3.modelo;
 
 /**
  * Created by Mariano on 05/06/2016.

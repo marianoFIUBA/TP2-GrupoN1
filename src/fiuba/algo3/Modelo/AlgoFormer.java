@@ -17,7 +17,9 @@ public abstract class AlgoFormer {
         return posicion;
     }
 
-    public abstract void moverAcasillero(Casillero casillero);
+    public void moverAcasillero(Casillero casillero) {
+
+    }
 
     public abstract void atacar(AlgoFormer algoformer);
 

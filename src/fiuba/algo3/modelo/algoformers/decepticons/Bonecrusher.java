@@ -16,11 +16,6 @@ public class Bonecrusher extends Decepticon {
     }
 
     @Override
-    public void moverAcasillero(Casillero casillero){
-
-    }
-
-    @Override
     public void atacar(AlgoFormer algoformer){
 
     }
